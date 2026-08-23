@@ -17,6 +17,7 @@
   ul { padding-left: 22px; }
   .karte { background: #f4f6fb; border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
   a { color: var(--blau); }
+  code { background: #eef1f8; border-radius: 4px; padding: 1px 6px; font-size: 14px; }
   footer { border-top: 1px solid #e3e6ef; margin-top: 48px; padding: 24px; text-align: center; font-size: 14px; color: #667; }
   footer a { margin: 0 10px; }
   .badge { display: inline-block; background: var(--gelb); color: var(--blau); font-weight: 700; border-radius: 6px; padding: 2px 10px; font-size: 13px; margin-bottom: 12px; }
@@ -30,28 +31,44 @@
   <p style="margin-top:18px;">
     <a href="https://apps.shopify.com/eu-garantie-labels" rel="noopener" style="display:inline-block;background:var(--gelb);color:#002370;font-weight:800;text-decoration:none;padding:13px 26px;border-radius:8px;">Jetzt im Shopify App Store installieren</a>
   </p>
-  <p style="margin-top:10px;font-size:13px;opacity:.8;">4,99 $/Monat · 14 Tage kostenlos testen · <a href="ratgeber.html" style="color:#fff;">Ratgeber zur neuen Pflicht</a></p>
+  <p style="margin-top:10px;font-size:13px;opacity:.8;">4,99 $/Monat oder 49 $/Jahr · 30 Tage kostenlos testen · <a href="ratgeber.html" style="color:#fff;">Ratgeber zur neuen Pflicht</a></p>
 </header>
 <main>
   <h2>Was macht die App?</h2>
-  <p>EU Garantie Labels blendet das ab dem 27.09.2026 verpflichtende EU-Gewährleistungslabel sowie das Garantielabel (Haltbarkeitsgarantie des Herstellers) per Drag &amp; Drop in deinem Shopify-Theme ein — ohne Code, ohne Theme-Anpassung, ohne Zugriff auf Kundendaten.</p>
+  <p>EU Garantie Labels blendet das ab dem 27.09.2026 verpflichtende EU-Gewährleistungslabel sowie das GARAN-Garantielabel (Haltbarkeitsgarantie des Herstellers) per Drag &amp; Drop in deinem Shopify-Theme ein — ohne Code, ohne Theme-Anpassung, ohne Zugriff auf Kundendaten.</p>
+  <p>Ausgeliefert wird die <strong>unveränderte Originalgrafik der Europäischen Kommission</strong>, automatisch in der Sprache deines Shops — alle 24 Amtssprachen sind enthalten.</p>
+
+  <h2>Einrichtung</h2>
+  <div class="karte">
+    <p><strong>Wie füge ich das Label ein?</strong><br>
+    Theme-Editor öffnen (Onlineshop → Themes → Anpassen) → Produktseiten-Template wählen → „Block hinzufügen“ → Apps → „EU-Gewährleistungslabel“. Speichern — fertig. Das GARAN-Label fügst du genauso ein.</p>
+  </div>
+  <div class="karte">
+    <p><strong>Wie steuere ich die Garantiedauer pro Produkt?</strong><br>
+    Für ein einheitliches Sortiment genügt der Schieberegler im Block, für mehrere Marken eine Zeile je Hersteller. Nur für Einzelfälle brauchst du ein Metafeld.<br>
+    → <a href="einrichtung.html"><strong>Schritt-für-Schritt-Anleitung zur Einrichtung</strong></a></p>
+  </div>
+  <div class="karte">
+    <p><strong>Wo gehören die Labels hin?</strong><br>
+    Das GARAN-Label ist produktbezogen und gehört auf die Produktdetailseite. Die Gewährleistungsmitteilung muss lediglich klar erkennbar und vor Abgabe der Bestellung sichtbar sein — Produktseite oder eine zentrale Stelle im Checkout. Sie muss dauerhaft und vollständig sichtbar sein, also nicht in Tabs, Akkordeons oder Hover-Elementen. Das GARAN-Label darf dagegen verschachtelt (aufklappbar) eingebunden werden.</p>
+  </div>
 
   <h2>Häufige Fragen</h2>
   <div class="karte">
-    <p><strong>Wie füge ich das Label ein?</strong><br>
-    Theme-Editor öffnen (Onlineshop → Themes → Anpassen) → Produktseiten-Template wählen → „Block hinzufügen" → Apps → „EU-Gewährleistungslabel". Speichern — fertig.</p>
+    <p><strong>Ab wann ist das GARAN-Label Pflicht?</strong><br>
+    Es ist keine Pflicht, sondern eine Erlaubnis — und nur zulässig, wenn der <em>Hersteller</em> eine Garantie von <strong>mehr als zwei Jahren</strong> kostenlos und für die gesamte Ware gewährt. 24 Monate genügen ausdrücklich nicht.</p>
   </div>
   <div class="karte">
-    <p><strong>Wie steuere ich das Garantielabel pro Produkt?</strong><br>
-    Lege unter Einstellungen → Benutzerdefinierte Daten → Produkte das Metafeld <code>custom.garantie_dauer_jahre</code> (Ganzzahl) an und trage die Garantiedauer beim jeweiligen Produkt ein. Ab 2 Jahren erscheint das Label automatisch. Alternativ kannst du im Block eine Standard-Dauer für alle Produkte setzen.</p>
-  </div>
-  <div class="karte">
-    <p><strong>Muss ich das Label nutzen?</strong><br>
-    Ab dem 27.09.2026 müssen Händler im B2C-Verkauf über die gesetzliche Gewährleistung mit einem harmonisierten Label informieren (EmpCo-Richtlinie, EU 2024/825). B2B-Verkäufe sind ausgenommen. Diese App ist keine Rechtsberatung — im Zweifel frage deine Rechtsberatung.</p>
+    <p><strong>Muss ich das Gewährleistungslabel nutzen?</strong><br>
+    Ab dem 27.09.2026 müssen Händler im B2C-Verkauf über die gesetzliche Gewährleistung mit einer harmonisierten Mitteilung informieren (EmpCo-Richtlinie, EU 2024/825). B2B-Verkäufe sind ausgenommen. Diese App ist keine Rechtsberatung — im Zweifel frage deine Rechtsberatung.</p>
   </div>
   <div class="karte">
     <p><strong>Verarbeitet die App Kundendaten?</strong><br>
-    Nein. Die App benötigt keinerlei API-Berechtigungen, setzt keine Cookies und lädt nichts von fremden Servern. Auch der QR-Code wird lokal im Browser erzeugt. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    Nein. Die App benötigt keinerlei API-Berechtigungen, setzt keine Cookies, lädt kein JavaScript und ruft keine fremden Server auf. Der QR-Code ist Teil der offiziellen Grafik und wird nicht nachgeladen. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  </div>
+  <div class="karte">
+    <p><strong>Der Block lässt sich im Warenkorb nicht einfügen.</strong><br>
+    Ein App-Block erscheint nur in Bereichen, die dein Theme dafür freigegeben hat. Manche Themes tun das im Warenkorb nicht — das entscheidet der Theme-Anbieter, keine App kann es umgehen. Auf der Produktseite funktioniert es in allen Online-Store-2.0-Themes.</p>
   </div>
 
   <h2>Support</h2>
@@ -59,6 +76,8 @@
   <p><strong>E-Mail:</strong> <a href="mailto:rttnsdsgnr@gmail.com">rttnsdsgnr@gmail.com</a></p>
 </main>
 <footer>
+  <a href="einrichtung.html">Einrichtung</a>
+  <a href="ratgeber.html">Ratgeber</a>
   <a href="impressum.html">Impressum</a>
   <a href="datenschutz.html">Datenschutz</a>
 </footer>
