@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Einrichtung: Garantiedauer pro Produkt — EU Garantie Labels</title>
-<meta name="description" content="Schritt für Schritt: So steuerst du die Garantiedauer pro Produkt in Shopify — mit oder ohne Metafelder.">
+<title>Labels einfügen und einrichten — EU Garantie Labels</title>
+<meta name="description" content="Schritt für Schritt: Labels im Shopify-Theme einfügen, fehlende Blöcke finden und Garantiedaten einrichten.">
 <style>
   :root { --blau: #003399; --gelb: #FFCC00; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,13 +37,30 @@
 <body>
 <header>
   <div class="badge">Einrichtung</div>
-  <h1>Garantiedauer pro Produkt steuern</h1>
-  <p>Drei Wege — vom schnellsten bis zum genauesten</p>
+  <h1>Labels einfügen und einrichten</h1>
+  <p>Vom installierten App-Block bis zur sichtbaren Produktseite</p>
   <p style="margin-top:14px;font-size:14px;"><a href="index.html">&larr; zurück zur Übersicht</a></p>
 </header>
 <main>
 
-  <p>Das <strong>Gewährleistungslabel</strong> braucht keine Einrichtung: Block einfügen, fertig. Es gilt für jedes Produkt gleich.</p>
+  <h2 id="block-einfuegen">1. Den Block auf der Produktseite einfügen</h2>
+  <p>Die Installation allein blendet noch kein Label ein. Du platzierst den Block im Theme-Editor. Du brauchst dafür keinen Code und keinen Eintrag im Beschreibungstext des Produkts.</p>
+  <ol>
+    <li>Öffne im Shopify-Admin <strong>Onlineshop → Themes</strong>.</li>
+    <li>Öffne beim gewünschten Theme <strong>Theme bearbeiten</strong> beziehungsweise <strong>Anpassen</strong>. Änderungen in einem unveröffentlichten Theme sind zunächst nur in dessen Vorschau sichtbar.</li>
+    <li>Wähle oben in der Seitenauswahl <strong>Produkte</strong> und die Vorlage, die deinem Produkt zugewiesen ist, häufig <strong>Standardprodukt</strong>. Wähle ein konkretes Produkt für die Vorschau.</li>
+    <li>Öffne links den Abschnitt <strong>Produktinformationen</strong> oder den entsprechenden Produktbereich deines Themes.</li>
+    <li>Klicke <strong>innerhalb dieses Abschnitts</strong> auf <strong>Block hinzufügen → Apps → EU-Gewährleistungslabel</strong>. Bei englischer Oberfläche heißt der Block „EU legal guarantee label“.</li>
+    <li>Verschiebe den Block an die gewünschte verfügbare Position und klicke <strong>Speichern</strong>.</li>
+    <li>Öffne das Produkt in der Vorschau dieses Themes. Für die öffentliche Anzeige müssen das bearbeitete Theme veröffentlicht und die richtige Vorlage dem Produkt zugewiesen sein. Andere Produktvorlagen richtest du separat ein.</li>
+  </ol>
+  <div class="karte karte--warn">
+    <p><strong>Du findest „Apps“ oder den Block nicht?</strong> Prüfe alternativ <strong>Abschnitt hinzufügen → Apps</strong> auf Vorlagenebene. Manche Themes unterstützen App-Blöcke nur dort oder in bestimmten Bereichen. Suche nicht unter „App-Einbettungen“: Diese App stellt normale App-Blöcke bereit. Bei älteren oder angepassten Themes kann ein geeigneter Bereich fehlen. Sende uns dann den Theme-Namen, die gewählte Vorlage und einen Screenshot des Schritts.</p>
+    <p>Die App enthält keine Checkout-Erweiterung. Eine Platzierung im Warenkorb funktioniert nur, wenn dein Theme dort App-Blöcke unterstützt.</p>
+  </div>
+  <p>Das <strong>Gewährleistungslabel</strong> benötigt keine Garantiedauer. Nach dem Einfügen ist es sichtbar, sofern keine Einstellung unter „Sichtbarkeit &amp; Ausnahmen“ die Anzeige ausschließt.</p>
+  <h2>2. Optional das GARAN-Garantielabel hinzufügen</h2>
+  <p>Füge auf demselben Weg zusätzlich <strong>EU-Garantielabel (Haltbarkeitsgarantie)</strong> hinzu (englisch: „EU commercial guarantee label (durability)“). Dieser Block erscheint erst mit geeigneter Garantiedauer, Marke und Modellkennung. Der Standardwert 0 blendet ihn aus, solange keine Hersteller-Zuordnung oder Produktangabe greift. Verwende ausschließlich bestätigte Angaben zur Herstellergarantie.</p>
   <p>Das <strong>GARAN-Garantielabel</strong> ist dagegen produktbezogen — es zeigt Dauer, Marke und Modellkennung. Woher die Dauer kommt, entscheidest du. Es gibt drei Wege, und die meisten Shops brauchen den dritten gar nicht.</p>
 
   <h2>Weg 1: Ein Wert für alle Produkte</h2>
@@ -94,9 +111,14 @@
     <tr><td><code>custom.garantie_kostenlos</code></td><td>Wahrheitswert</td><td>auf <em>nein</em> setzen, wenn die Garantie etwas kostet &rarr; Label entfällt</td></tr>
     <tr><td><code>custom.garantie_ganze_ware</code></td><td>Wahrheitswert</td><td>auf <em>nein</em> setzen bei Teilgarantien wie „10 Jahre auf den Motor“ &rarr; Label entfällt</td></tr>
     <tr><td><code>custom.garantie_label_bild</code></td><td>Datei</td><td>eigene Label-Datei statt der mitgelieferten</td></tr>
+    <tr><td><code>custom.garantie_bedingungen_url</code></td><td>URL</td><td>Link zu den Garantiebedingungen dieses Produkts; hat Vorrang vor dem Link in den Block-Einstellungen</td></tr>
   </table>
   </div>
   <p>Die drei Wahrheitswerte blenden das Label nur aus, wenn du sie ausdrücklich auf <em>nein</em> stellst. Lässt du sie leer, passiert nichts.</p>
+  <h3>Marke, Modellkennung und Bedingungen prüfen</h3>
+  <p>Öffne das Produkt im Shopify-Admin. Pflege die Marke im Feld <strong>Anbieter</strong> oder im Metafeld <code>custom.garantie_hersteller</code>. Die Modellkennung kannst du produktweit über <code>custom.garantie_modell</code> festlegen. Alternativ nutzt die App die SKU oder den Barcode der beim Laden ausgewählten Variante.</p>
+  <p><strong>Bei mehreren Varianten:</strong> Wenn für alle dieselbe Modellkennung gilt, pflege das Produkt-Metafeld. Bei verschiedenen Kennungen prüfe jede Variante auch nach einem Wechsel auf der Produktseite: Ob der App-Block dabei neu geladen wird, hängt vom Theme ab. Eine automatische Aktualisierung in jedem Theme wird nicht zugesichert.</p>
+  <p>Trage unter <strong>Link zu den Garantiebedingungen</strong> im Block eine passende Seite ein oder verwende das URL-Metafeld pro Produkt. Prüfe den Link in der Shop-Vorschau.</p>
 
   <h2>Das Label erscheint nicht — woran liegt's?</h2>
   <div class="karte">
@@ -109,7 +131,7 @@
   </div>
   <div class="karte">
     <p><strong>Marke oder Modellkennung fehlen.</strong><br>
-    Beide sind Pflichtfelder nach Anhang II. Ist das Feld <em>Anbieter</em> beim Produkt leer und auch kein Metafeld gesetzt, liefert die App das Label nicht aus — ein Ersatz durch deinen Shop-Namen wäre falsch, denn das Feld meint den <em>Hersteller</em>.</p>
+    Pflege die Marke beim Produkt unter <em>Anbieter</em> oder über <code>custom.garantie_hersteller</code>. Für die Modellkennung öffne die betreffende Variante und pflege SKU oder Barcode, oder trage die produktweit gültige Kennung in <code>custom.garantie_modell</code> ein. Der Produkttitel wird nicht als Modellkennung verwendet.</p>
   </div>
   <div class="karte">
     <p><strong>Es ist eine Geschenkkarte oder ein ausgeschlossener Produkttyp.</strong><br>
@@ -117,8 +139,7 @@
   </div>
 
   <h2 id="warum">Warum legt die App die Felder nicht selbst an?</h2>
-  <p>Weil sie es nicht darf — und das ist so gewollt. EU Garantie Labels ist eine reine Theme-Erweiterung: Sie fordert <strong>null API-Berechtigungen</strong> an und hat damit keinen Zugriff auf deinen Shop, deine Produkte oder deine Kundendaten. Genau deshalb kann sie auch keine Metafelddefinitionen für dich erstellen.</p>
-  <p>Der Preis dafür ist diese eine Minute Einrichtung. Der Gegenwert: Es gibt keine Schnittstelle, über die etwas abfließen könnte.</p>
+  <p>EU Garantie Labels ist eine Theme-Erweiterung ohne Admin-API-Berechtigungen. Sie liest die für die Darstellung benötigten Produktangaben und Metafelder beim Rendern im Theme. Sie kann keine Metafelddefinitionen oder Produktwerte im Shopify-Admin anlegen oder ändern. Deshalb legst du diese bei Bedarf selbst an.</p>
 
   <h2>Noch Fragen?</h2>
   <p>Schreib mir, ich antworte in der Regel innerhalb von 24 Stunden: <a href="mailto:rttnsdsgnr@gmail.com">rttnsdsgnr@gmail.com</a></p>
