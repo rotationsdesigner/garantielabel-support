@@ -92,19 +92,22 @@
     <li><strong>Definition hinzufügen</strong></li>
     <li><strong>Name:</strong> <code>Garantiedauer in Jahren</code></li>
     <li>Unter dem Namen steht der Namespace und Schlüssel. Trag als Schlüssel <code>garantie_dauer_jahre</code> ein, der Namespace bleibt <code>custom</code>. Es muss am Ende genau <code>custom.garantie_dauer_jahre</code> dastehen.</li>
-    <li><strong>Typ auswählen</strong> &rarr; <strong>Dezimalzahl</strong> (nicht Ganzzahl — sonst kannst du keine halben Jahre eintragen)</li>
+    <li><strong>Typ auswählen</strong> &rarr; <strong>Dezimalzahl</strong> (nicht Ganzzahl — sonst kannst du keine halben Jahre eintragen). Achte oben auf <strong>Einzelwert</strong>, <strong>nicht „Liste“</strong>. Das Feld braucht genau eine Garantiedauer pro Produkt.</li>
     <li>Speichern</li>
   </ol>
 
   <h3>Wert eintragen</h3>
   <p>Produkt öffnen, ganz nach unten scrollen zu <strong>Produktmetafelder</strong>, bei <em>Garantiedauer in Jahren</em> die Zahl eintragen, speichern. Das Metafeld hat immer Vorrang vor Weg 1 und Weg 2.</p>
+  <div class="karte karte--warn">
+    <p><strong>In Shopify steht oben „Liste“?</strong> Dann wurde ein Listen-Metafeld angelegt. P1 akzeptiert eine Liste mit genau <strong>einem</strong> Wert, zum Beispiel nur <code>30,0</code>, damit bestehende Shops nicht blockiert werden. Für eine saubere Einrichtung lege das Feld künftig als <strong>Einzelwert → Dezimalzahl</strong> an. Mehrere Werte sind nicht zulässig, weil eine Ware nur eine bestätigte Garantiedauer haben kann.</p>
+  </div>
 
   <h2>Optionale Felder</h2>
   <p>Diese brauchst du nur, wenn die Automatik im Einzelfall nicht passt. Alle nach demselben Muster anlegen wie oben.</p>
   <div class="tabelle">
   <table>
     <tr><th>Schlüssel</th><th>Typ</th><th>Wofür</th></tr>
-    <tr><td><code>custom.garantie_dauer_jahre</code></td><td>Dezimalzahl</td><td>Dauer in Jahren</td></tr>
+    <tr><td><code>custom.garantie_dauer_jahre</code></td><td>Einzelwert: Dezimalzahl</td><td>Eine bestätigte Dauer in Jahren; keine Liste</td></tr>
     <tr><td><code>custom.garantie_hersteller</code></td><td>Einzeiliger Text</td><td>Marke, falls sie vom Feld „Anbieter“ abweicht</td></tr>
     <tr><td><code>custom.garantie_modell</code></td><td>Einzeiliger Text</td><td>Modellkennung, falls nicht die SKU</td></tr>
     <tr><td><code>custom.garantie_hersteller_garantie</code></td><td>Wahrheitswert</td><td>auf <em>nein</em> setzen, wenn es eine Händler- und keine Herstellergarantie ist &rarr; Label entfällt</td></tr>
