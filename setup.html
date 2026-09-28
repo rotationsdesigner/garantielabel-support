@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Einrichtung / Setup — EU Garantie Labels</title>
+  <link rel="stylesheet" href="setup.css">
+  <script src="setup.js" defer></script>
+</head>
+<body>
+<header>
+  <a href="index.html" class="brand">EU Garantie Labels</a>
+  <nav aria-label="Language / Sprache">
+    <button type="button" data-set-language="de" aria-pressed="true">Deutsch</button>
+    <button type="button" data-set-language="en" aria-pressed="false">English</button>
+  </nav>
+</header>
+<main>
+  <h1><span data-lang="de">Dein Label einrichten</span><span data-lang="en" hidden>Set up your label</span></h1>
+  <p class="lead" data-lang="de">Für aktuelle und ältere Shopify-Themes. Wähle den Weg, den dein Theme unterstützt.</p>
+  <p class="lead" data-lang="en" hidden>For modern and older Shopify themes. Choose the route your theme supports.</p>
+  <aside class="notice">
+    <p data-lang="de"><strong>Das Label funktioniert schon?</strong> Dann nichts erneut hinzufügen. Diese Anleitung verändert keine vorhandenen Einstellungen. Nach einem Theme-Wechsel musst du die Einbindung im neuen Theme prüfen.</p>
+    <p data-lang="en" hidden><strong>Your label already works?</strong> Do not add it again. This guide does not change existing settings. After switching themes, check the integration in the new theme.</p>
+  </aside>
+
+  <section aria-labelledby="shop-heading">
+    <h2 id="shop-heading"><span data-lang="de">1. Deinen Shop öffnen</span><span data-lang="en" hidden>1. Open your shop</span></h2>
+    <p data-lang="de">Die App muss installiert sein. Gib die ursprüngliche Shopify-Adresse ein, nicht deine eigene Webadresse. Du findest sie im Shopify-Admin unter <strong>Einstellungen → Domains</strong>.</p>
+    <p data-lang="en" hidden>The app must be installed. Enter your original Shopify address, not your custom domain. Find it in Shopify admin under <strong>Settings → Domains</strong>.</p>
+    <label for="shop-domain"><span data-lang="de">Shopify-Adresse</span><span data-lang="en" hidden>Shopify address</span></label>
+    <div class="shop-input">
+      <input id="shop-domain" type="text" inputmode="url" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="dein-shop.myshopify.com" aria-describedby="domain-help domain-error">
+      <button id="prepare-links" type="button" disabled><span data-lang="de">Einrichtungslinks anzeigen</span><span data-lang="en" hidden>Show setup links</span></button>
+    </div>
+    <p id="domain-help" class="small"><span data-lang="de">Deine Eingabe wird nur hier im Browser für die Links verwendet, nicht gespeichert oder als Formular an uns gesendet. Erst ein Klick auf einen Shopify-Link öffnet Shopify.</span><span data-lang="en" hidden>Your entry is used only in this browser to create links. It is not saved or submitted to us as a form. Shopify opens only when you click a Shopify link.</span></p>
+    <p id="domain-error" class="error" role="alert" hidden><span data-lang="de">Bitte eine gültige Adresse wie mein-shop.myshopify.com eingeben – ohne Pfad, Passwort oder weitere Parameter.</span><span data-lang="en" hidden>Enter a valid address such as my-shop.myshopify.com, without a path, password or extra parameters.</span></p>
+    <p id="links-ready" role="status" hidden><span data-lang="de">Einrichtungslinks bereit für </span><span data-lang="en" hidden>Setup links ready for </span><strong id="selected-shop"></strong>.</p>
+    <noscript><p>JavaScript ist hier für die Einrichtungslinks nötig. Nutze die manuellen Schritte unten. / JavaScript is needed for the setup links. Use the manual steps below.</p></noscript>
+  </section>
+
+  <section aria-labelledby="route-heading">
+    <h2 id="route-heading"><span data-lang="de">2. Gewährleistungsmitteilung einfügen</span><span data-lang="en" hidden>2. Add the legal guarantee notice</span></h2>
+    <p data-lang="de"><strong>Die Links öffnen nur eine Editor-Vorschau.</strong> Wähle dort ein Produkt und prüfe die Änderungen. Erst <strong>Speichern</strong> übernimmt sie. Beim aktiven Theme sind gespeicherte Änderungen öffentlich. Möchtest du zuerst eine unveröffentlichte Theme-Kopie testen, öffne sie unter <a data-editor-link="themes" aria-disabled="true">Onlineshop → Themes</a> und nutze die manuellen Schritte unten.</p>
+    <p data-lang="en" hidden><strong>These links open an editor preview only.</strong> Select a product and review the changes. They apply only after you <strong>Save</strong>. Saving the live theme makes changes public. To test an unpublished theme copy first, open it under <a data-editor-link="themes" aria-disabled="true">Online Store → Themes</a> and use the manual steps below.</p>
+    <div class="routes">
+      <article>
+        <h3 data-lang="de">A · Dein Theme hat App-Blöcke</h3><h3 data-lang="en" hidden>A · Your theme supports app blocks</h3>
+        <p data-lang="de">Theme-Editor → Produkte → gewünschte Produktvorlage → Produktinformationen → <strong>Block hinzufügen → Apps → EU-Gewährleistungslabel</strong>.</p>
+        <p data-lang="en" hidden>Theme editor → Products → the required product template → Product information → <strong>Add block → Apps → EU legal guarantee label</strong>. The block name may follow your editor language.</p>
+        <a class="button" data-editor-link="block" aria-disabled="true"><span data-lang="de">App-Block im Editor öffnen</span><span data-lang="en" hidden>Open app block in editor</span></a>
+        <p class="small" data-lang="de">Der Abschnitt unterstützt keine Apps? Versuche <strong>Abschnitt hinzufügen → Apps</strong> oder Weg B.</p>
+        <p class="small" data-lang="en" hidden>No apps allowed in that section? Try <strong>Add section → Apps</strong> or route B.</p>
+      </article>
+      <article>
+        <h3 data-lang="de">B · „Block hinzufügen“ fehlt</h3><h3 data-lang="en" hidden>B · There is no “Add block”</h3>
+        <p data-lang="de">Auch ältere Themes können App-Einbettungen nutzen: Theme-Editor → <strong>App-Einbettungen</strong> (linke Symbolleiste) → <strong>Gewährleistung (Vintage)</strong> aktivieren. Oben eine Produktseite wählen.</p>
+        <p data-lang="en" hidden>Older themes can use app embeds: Theme editor → <strong>App embeds</strong> (left toolbar) → enable <strong>Legal guarantee (Vintage)</strong>. Select a product page at the top.</p>
+        <a class="button" data-editor-link="vintage" aria-disabled="true"><span data-lang="de">Vintage-Einbettung öffnen</span><span data-lang="en" hidden>Open Vintage app embed</span></a>
+        <p class="small" data-lang="de">Kein Theme-Code nötig. Dieser Weg benötigt JavaScript und betrifft Produktseiten. Bei Sonder-Themes kann ein geprüftes Platzierungsziel erforderlich sein.</p>
+        <p class="small" data-lang="en" hidden>No theme-code edit needed. This route requires JavaScript and applies to product pages. Custom themes may need a verified placement target.</p>
+      </article>
+    </div>
+    <p data-lang="de">Ein Link öffnet die falsche Produktvorlage oder kein Produkt? Wähle oben im Editor die tatsächlich verwendete Vorlage und ein vorhandenes Produkt. Die Schnelllinks starten mit der Standard-Produktvorlage. <strong>Kein zweites Label hinzufügen, wenn bereits eines sichtbar ist.</strong></p>
+    <p data-lang="en" hidden>A link opens the wrong template or no product? Select the template actually used by your product and an existing product at the top of the editor. Quick links start with the default product template. <strong>Do not add a second label if one is already visible.</strong></p>
+  </section>
+
+  <section aria-labelledby="check-heading">
+    <h2 id="check-heading"><span data-lang="de">3. Vor dem Speichern prüfen</span><span data-lang="en" hidden>3. Check before saving</span></h2>
+    <ul data-lang="de">
+      <li>Die vollständige Mitteilung ist sichtbar und lesbar, am Desktop und mobil. Die Lupe ist eine zusätzliche Ansicht, kein Ersatz für eine geeignete Darstellung.</li>
+      <li>Lupe per Klick, Tippen und Tastatur öffnen, mit „Schließen“ oder Escape schließen. Auf kleinen Bildschirmen lässt sich die große Grafik innerhalb der Ansicht verschieben.</li>
+      <li>Ein Produkt mit Varianten und eines ohne Bestand testen. Nach einem Variantenwechsel bleibt die Anzeige erhalten.</li>
+      <li>Jede verwendete Produktvorlage und jede aktive Shop-Sprache prüfen. Die Grafiken decken 24 EU-Amtssprachen ab; für andere Sprachen wird Englisch verwendet.</li>
+      <li>Nach dem Speichern auch die tatsächliche Shopseite neu laden und prüfen – nicht nur die Editor-Vorschau.</li>
+    </ul>
+    <ul data-lang="en" hidden>
+      <li>The complete notice is visible and legible on desktop and mobile. Zoom is an additional view, not a substitute for suitable presentation.</li>
+      <li>Open zoom by click, touch and keyboard; close with “Close” or Escape. On small screens you can pan within the enlarged view.</li>
+      <li>Test a product with variants and an out-of-stock product. The notice should remain after a variant change.</li>
+      <li>Check every product template in use and every active storefront language. Graphics cover the 24 official EU languages; other languages fall back to English.</li>
+      <li>After saving, reload and check the actual storefront as well as the editor preview.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="garan-heading">
+    <h2 id="garan-heading"><span data-lang="de">GARAN ist ein eigener Schritt</span><span data-lang="en" hidden>GARAN is a separate step</span></h2>
+    <p data-lang="de">Die allgemeine Gewährleistungsmitteilung braucht keine Garantiedauer. GARAN betrifft dagegen geeignete kostenlose Hersteller-Haltbarkeitsgarantien für die gesamte Ware mit mehr als zwei Jahren Laufzeit, wenn der Hersteller die Informationen bereitstellt. Prüfe Dauer, Hersteller, Modell und Bedingungen, bevor du GARAN aktivierst. Anbieter und SKU sind nur Ersatzwerte, kein Nachweis.</p>
+    <p data-lang="en" hidden>The general legal guarantee notice needs no guarantee duration. GARAN instead concerns qualifying, free producer durability guarantees covering the entire good for more than two years, where the producer makes the information available. Verify duration, producer, model and terms before enabling GARAN. Vendor and SKU fallbacks are not evidence.</p>
+    <p data-lang="de"><strong>Keine stillschweigende Datenfreigabe:</strong> Prüfe die Editor-Warnungen. Die zusätzliche GARAN-Schutzprüfung wird bewusst pro Block aktiviert; sie kann problematische GARAN-Grafiken ausblenden. Vorhandene Installationen werden nicht automatisch umgestellt. Ohne diesen Schutz kann die bisherige Ausgabe weiterhin Werte abrunden. Das ist keine Bestätigung ihrer Richtigkeit. → <a href="einrichtung.html#schutzpruefung">Daten prüfen und Schutz aktivieren</a></p>
+    <p data-lang="en" hidden><strong>No automatic verification:</strong> Read editor warnings. The additional GARAN validation is enabled explicitly per block and can hide problematic GARAN graphics. Existing installations are not automatically switched over. Without this validation, the legacy output can still round down values; that does not verify their accuracy. → <a href="einrichtung.html#schutzpruefung">Detailed validation guide (German)</a></p>
+  </section>
+
+  <aside class="notice">
+    <h2 data-lang="de">Theme-Einbindung ist nicht der ganze Kaufablauf</h2><h2 data-lang="en" hidden>Theme integration is not the entire purchase flow</h2>
+    <p data-lang="de">Diese App enthält keine Checkout-Erweiterung und ergänzt keine Bestell-E-Mails. Schnellkauf, Warenkorb-Drawer und beschleunigte Zahlungen können die Produktseite umgehen. Prüfe diese Wege und ergänzende Informationspflichten gesondert. Headless-Shops, POS und externe Marktplätze werden durch diese Theme-Erweiterung nicht abgedeckt. Installation allein ist keine rechtliche Freigabe deines Shops.</p>
+    <p data-lang="en" hidden>This app includes no checkout extension and does not add content to order emails. Quick buy, cart drawers and accelerated payments can bypass product pages. Review these paths and additional information duties separately. Headless storefronts, POS and external marketplaces are not covered by this theme extension. Installation alone does not establish legal compliance.</p>
+  </aside>
+
+  <section aria-labelledby="help-heading">
+    <h2 id="help-heading"><span data-lang="de">Das Label erscheint nicht?</span><span data-lang="en" hidden>Notice not showing?</span></h2>
+    <p data-lang="de">Prüfe, ob du auf einer Produktseite bist, die richtige Vorlage geöffnet und die Einbettung gespeichert hast. Kontrolliere „Sichtbarkeit &amp; Ausnahmen“ und Editor-Hinweise. Bitte nicht auf Verdacht weiteren Code oder weitere Labels hinzufügen.</p>
+    <p data-lang="en" hidden>Check that you are viewing a product page, have opened the correct template and saved the embed. Review visibility exclusions and editor messages. Do not add duplicate labels or extra code as a workaround.</p>
+    <p data-lang="de">Schick uns Theme-Name und Version, einen Screenshot des Editors und die betroffene Vorlage an <a href="mailto:rttnsdsgnr@gmail.com">rttnsdsgnr@gmail.com</a>. Keine Passwörter, API-Schlüssel oder Kundendaten mitsenden. Für eine shopspezifische Prüfung kann ein sicher eingerichteter Shopify-Mitarbeiterzugang nötig sein.</p>
+    <p data-lang="en" hidden>Send the theme name and version, an editor screenshot and the affected template to <a href="mailto:rttnsdsgnr@gmail.com">rttnsdsgnr@gmail.com</a>. Do not send passwords, API keys or customer data. A shop-specific check may require securely configured Shopify collaborator access.</p>
+  </section>
+</main>
+<footer><a href="einrichtung.html">Ausführliche Anleitung (DE)</a><a href="ratgeber.html">Quellen / Sources (DE)</a><a href="datenschutz.html">Datenschutz / Privacy (DE)</a><a href="impressum.html">Impressum / Legal notice</a></footer>
+</body>
+</html>
