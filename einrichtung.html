@@ -55,10 +55,20 @@
     <li>Öffne das Produkt in der Vorschau dieses Themes. Für die öffentliche Anzeige müssen das bearbeitete Theme veröffentlicht und die richtige Vorlage dem Produkt zugewiesen sein. Andere Produktvorlagen richtest du separat ein.</li>
   </ol>
   <div class="karte karte--warn">
-    <p><strong>Du findest „Apps“ oder den Block nicht?</strong> Prüfe alternativ <strong>Abschnitt hinzufügen → Apps</strong> auf Vorlagenebene. Manche Themes unterstützen App-Blöcke nur dort oder in bestimmten Bereichen. Suche nicht unter „App-Einbettungen“: Diese App stellt normale App-Blöcke bereit. Bei älteren oder angepassten Themes kann ein geeigneter Bereich fehlen. Sende uns dann den Theme-Namen, die gewählte Vorlage und einen Screenshot des Schritts.</p>
+    <p><strong>Du findest „Apps“ oder den Block nicht?</strong> Prüfe alternativ <strong>Abschnitt hinzufügen → Apps</strong> auf Vorlagenebene. Manche Themes unterstützen App-Blöcke nur dort oder in bestimmten Bereichen. Für die Gewährleistungsmitteilung in älteren Themes gibt es zusätzlich den Weg über <strong>App-Einbettungen → Gewährleistung (Vintage)</strong>, siehe unten. Sende uns bei Problemen den Theme-Namen, die gewählte Vorlage und einen Screenshot des Schritts.</p>
     <p>Die App enthält keine Checkout-Erweiterung. Eine Platzierung im Warenkorb funktioniert nur, wenn dein Theme dort App-Blöcke unterstützt.</p>
   </div>
-  <p>Das <strong>Gewährleistungslabel</strong> benötigt keine Garantiedauer. Nach dem Einfügen ist es sichtbar, sofern keine Einstellung unter „Sichtbarkeit &amp; Ausnahmen“ die Anzeige ausschließt.</p>
+  <p>Das <strong>Gewährleistungslabel</strong> benötigt keine Garantiedauer. Nach dem Einfügen ist es sichtbar, sofern keine Einstellung unter „Sichtbarkeit &amp; Ausnahmen“ die Anzeige ausschließt. Die Mitteilung erscheint direkt als vollständige Grafik. Die zusätzliche Lupe „Label vergrößert ansehen“ öffnet eine größere Ansicht; sie ersetzt die direkt sichtbare Grafik nicht. Wähle einen ausreichend breiten Bereich; die App verwendet standardmäßig 800 px.</p>
+  <h3>Älteres Theme ohne passende App-Blöcke</h3>
+  <ol>
+    <li>Öffne im selben Theme-Editor links <strong>App-Einbettungen</strong>.</li>
+    <li>Aktiviere <strong>Gewährleistung (Vintage)</strong> (englisch: „Legal guarantee (Vintage)“).</li>
+    <li>Öffne eine Produktseite in der Vorschau. Das Label wird beim Produktbereich platziert; in Narrative ist die mobile Position vor dem Teilen-Bereich beziehungsweise hinter der Beschreibung vorgesehen.</li>
+    <li>Prüfe die Darstellung und die Lupe sowohl mobil als auch am Desktop, speichere und kontrolliere anschließend die tatsächliche Shopseite. Nach einem Theme-Wechsel die Einbettung im neuen Theme erneut prüfen.</li>
+  </ol>
+  <p><strong>Sonder-Theme ohne automatisch erkannten Produktbereich?</strong> Die Einstellung <strong>„Eigenes Platzierungsziel“</strong> kann ein eindeutiges Element auf der Produktseite auswählen; leer bleibt die bisherige Automatik unverändert. Trage dort keinen geratenen Wert ein: Ein ungültiges oder mehrdeutiges Ziel lässt das Label aus Sicherheitsgründen verborgen. Sende dem Support Theme-Name und Produkt-URL, damit wir einen passenden Selektor gemeinsam prüfen. Auch bei ausverkauften Produkten ohne Kauf-Formular ist so eine Platzierung möglich.</p>
+  <p><strong>Grenzen dieses Wegs:</strong> Die Vintage-Einbettung betrifft die Gewährleistungsmitteilung auf Produktseiten, nicht automatisch GARAN oder den Checkout. Sie benötigt JavaScript. Keine zweite Installation kaufen und keinen Code in die Produktbeschreibung einfügen.</p>
+  <p><strong>Lupe bedienen:</strong> Öffnen per Klick, Tippen oder Enter; schließen über „Schließen“ oder Escape. Auf schmalen Bildschirmen lässt sich die vergrößerte Grafik innerhalb der Ansicht verschieben. Wenn die Dialogfunktion nicht verfügbar ist, führt der Vergrößerungslink zur Bilddatei in einem neuen Tab.</p>
   <h2>2. Optional das GARAN-Garantielabel hinzufügen</h2>
   <p>Füge auf demselben Weg zusätzlich <strong>EU-Garantielabel (Haltbarkeitsgarantie)</strong> hinzu (englisch: „EU commercial guarantee label (durability)“). Dieser Block erscheint erst mit geeigneter Garantiedauer, Marke und Modellkennung. Der Standardwert 0 blendet ihn aus, solange keine Hersteller-Zuordnung oder Produktangabe greift. Verwende ausschließlich bestätigte Angaben zur Herstellergarantie.</p>
   <p>Das <strong>GARAN-Garantielabel</strong> ist dagegen produktbezogen — es zeigt Dauer, Marke und Modellkennung. Woher die Dauer kommt, entscheidest du. Es gibt drei Wege, und die meisten Shops brauchen den dritten gar nicht.</p>
@@ -99,7 +109,7 @@
   <h3>Wert eintragen</h3>
   <p>Produkt öffnen, ganz nach unten scrollen zu <strong>Produktmetafelder</strong>, bei <em>Garantiedauer in Jahren</em> die Zahl eintragen, speichern. Das Metafeld hat immer Vorrang vor Weg 1 und Weg 2.</p>
   <div class="karte karte--warn">
-    <p><strong>In Shopify steht oben „Liste“?</strong> Dann wurde ein Listen-Metafeld angelegt. P1 akzeptiert eine Liste mit genau <strong>einem</strong> Wert, zum Beispiel nur <code>30,0</code>, damit bestehende Shops nicht blockiert werden. Für eine saubere Einrichtung lege das Feld künftig als <strong>Einzelwert → Dezimalzahl</strong> an. Mehrere Werte sind nicht zulässig, weil eine Ware nur eine bestätigte Garantiedauer haben kann.</p>
+    <p><strong>In Shopify steht oben „Liste“?</strong> Dann wurde ein Listen-Metafeld angelegt. P1 akzeptiert eine Liste mit genau <strong>einem</strong> Wert, zum Beispiel nur <code>30,0</code>, damit bestehende Shops nicht blockiert werden. Für eine neue Einrichtung nutze <strong>Einzelwert → Dezimalzahl</strong>. Die App benötigt genau eine eindeutig zugeordnete, bestätigte Laufzeit. Mehrere Einträge sind für ihre automatische Ausgabe nicht eindeutig; daraus folgt nicht, dass für eine Ware grundsätzlich nur eine Garantie bestehen könnte.</p>
   </div>
 
   <h2>Optionale Felder</h2>
@@ -117,7 +127,7 @@
     <tr><td><code>custom.garantie_bedingungen_url</code></td><td>URL</td><td>Link zu den Garantiebedingungen dieses Produkts; hat Vorrang vor dem Link in den Block-Einstellungen</td></tr>
   </table>
   </div>
-  <p>Die drei Wahrheitswerte blenden das Label nur aus, wenn du sie ausdrücklich auf <em>nein</em> stellst. Lässt du sie leer, passiert nichts.</p>
+  <p>Die drei Wahrheitswerte blenden das Label nur aus, wenn du sie ausdrücklich auf <em>nein</em> stellst. Leere Felder bestätigen die Voraussetzungen nicht. Prüfe Hersteller, Kostenfreiheit und Abdeckung der gesamten Ware anhand der Herstellerunterlagen; bei einer Hersteller-Zuordnung für alle betroffenen Produkte.</p>
   <h3>Marke, Modellkennung und Bedingungen prüfen</h3>
   <p>Öffne das Produkt im Shopify-Admin. Pflege die Marke im Feld <strong>Anbieter</strong> oder im Metafeld <code>custom.garantie_hersteller</code>. Die Modellkennung kannst du produktweit über <code>custom.garantie_modell</code> festlegen. Alternativ nutzt die App die SKU oder den Barcode der beim Laden ausgewählten Variante.</p>
   <p><strong>Bei mehreren Varianten:</strong> Wenn für alle dieselbe Modellkennung gilt, pflege das Produkt-Metafeld. Bei verschiedenen Kennungen prüfe jede Variante auch nach einem Wechsel auf der Produktseite: Ob der App-Block dabei neu geladen wird, hängt vom Theme ab. Eine automatische Aktualisierung in jedem Theme wird nicht zugesichert.</p>
@@ -130,7 +140,7 @@
   </div>
   <div class="karte">
     <p><strong>Die Dauer wird immer abgerundet.</strong><br>
-    Das Label kann nur ganze und halbe Jahre darstellen. Aus 2,9 wird 2,5 — nie 3. Aus 2,4 wird 2,0, und damit fällt der Wert unter die Schwelle und das Label entfällt. Das ist Absicht: Es soll nie mehr versprechen, als der Hersteller gibt.</p>
+    Die Kommissionsleitlinien sehen ganze oder halbe Jahre vor. <strong>Die bisher veröffentlichte Version rundet andere Werte ab; das ist keine bestätigte Lösung für solche Garantien.</strong> Beispielsweise kann aus 2,9 die Anzeige 2,5 werden oder bei 2,4 das Label fehlen. Verwende nur anhand der Herstellerunterlagen bestätigte, darstellbare Laufzeiten. Ist die tatsächliche Laufzeit weder ganz- noch halbjährig, ändere die Garantiezusage nicht eigenmächtig und kläre die Kennzeichnung mit Hersteller und qualifizierter Rechtsberatung. Melde uns solche Fälle, bevor du dich auf die automatische Ausgabe verlässt.</p>
   </div>
   <div class="karte">
     <p><strong>Marke oder Modellkennung fehlen.</strong><br>
@@ -140,6 +150,30 @@
     <p><strong>Es ist eine Geschenkkarte oder ein ausgeschlossener Produkttyp.</strong><br>
     Prüf im Block die Einstellungen unter <em>Sichtbarkeit &amp; Ausnahmen</em>.</p>
   </div>
+
+  <h2 id="schutzpruefung">Zusätzliche GARAN-Schutzprüfung – bewusst umstellen</h2>
+  <p>Wenn dein GARAN-Block den Schalter <strong>„Zusätzliche GARAN-Schutzprüfung aktivieren“</strong> anbietet, bleibt er zunächst aus. Ein Update schaltet ihn bei bestehenden Installationen nicht automatisch ein. Hinweise im Editor beziehen sich auf das Vorschauprodukt, nicht auf einen vollständigen Shop-Scan.</p>
+  <ol>
+    <li>Arbeite zunächst in einer unveröffentlichten Theme-Kopie. Prüfe alle betroffenen Produkte und Varianten anhand der Herstellerunterlagen.</li>
+    <li>Behebe mehrdeutige Angaben und prüfe Warnungen zu Laufzeit und Textüberlauf. <code>2,9</code> Jahre sind nicht „2 Jahre und 9 Monate“. Eine tatsächliche Garantie darf nicht passend gerundet oder durch eine andere Ersatzdauer ersetzt werden.</li>
+    <li>Bei nicht darstellbarer Laufzeit die Kennzeichnung mit Hersteller und qualifizierter Rechtsberatung klären. Bei zu langen Kennungen kann eine zutreffende Originalgrafik geprüft werden; sie löst keinen Laufzeitfehler.</li>
+    <li>Erst dann den Schutz je Block aktivieren. Er sperrt problematische GARAN-Ausgaben auch ohne JavaScript. Das kann gewollt Labels mit betroffenen Daten ausblenden; es erfüllt allein keine bestehende Informationspflicht.</li>
+    <li>Gültige und korrigierte Produkte, Bedingungen-Link und Kaufablauf erneut kontrollieren. Die Gewährleistungsmitteilung und ihre Lupe sind unabhängig von diesem Schalter.</li>
+  </ol>
+  <p>Ohne aktivierten Schutz bleibt die bisherige Ausgabe erhalten, einschließlich möglicher problematischer Rundungen. Das Abschalten ist deshalb keine Korrektur falscher Garantiedaten. Eine passende Textbreite ist zudem keine Freigabe der Typografie; die automatische Grafik verwendet teilweise Schriftanpassungen.</p>
+
+  <h2 id="garan-vintage">Zusätzliches GARAN für ältere Themes</h2>
+  <p>Falls in deiner App-Version <strong>App-Einbettungen → GARAN (Theme-Einbettung)</strong> angeboten wird, kannst du GARAN separat aktivieren. Diese Einbettung ist nicht Teil des Schalters „Gewährleistung (Vintage)“ und ersetzt ihn nicht.</p>
+  <ol>
+    <li>In einer unveröffentlichten Theme-Kopie die zusätzliche GARAN-Einbettung aktivieren und bestätigte Garantiedaten einrichten. Der Standardwert 0 behauptet keine Garantie.</li>
+    <li>Das konkrete Produkt öffnen. Bei eindeutigem Kaufbereich wird das Label dort eingefügt. Einen sichtbaren normalen GARAN-Block erkennt die Einbettung, um eine doppelte Anzeige zu vermeiden.</li>
+    <li>Bei einem Platzierungshinweis den Support kontaktieren. Ein eigenes Platzierungsziel muss eindeutig im Produktbereich liegen. Keine beliebigen CSS-Selektoren ausprobieren.</li>
+    <li>Alle Varianten, Direktlinks, Mobil/Desktop und die Gewährleistungs-Lupe prüfen. Bei variantenabhängigen Modellkennungen lädt diese Einbettung die Daten von derselben Shop-Produktseite nach; bei Fehlern bleibt eine veraltete Grafik verborgen.</li>
+  </ol>
+  <p>Dieser zusätzliche Weg benötigt JavaScript und einen erkennbaren Produktbereich. Er garantiert keine Kompatibilität mit jedem individuellen Theme und ergänzt keinen Checkout. Bereits funktionierende Blöcke nicht vorsorglich entfernen.</p>
+
+  <h2 id="kaufablauf">Den vollständigen Kaufablauf getrennt prüfen</h2>
+  <p>Die App enthält keine Checkout-Erweiterung. Prüfe für passende GARAN-Produkte den normalen Warenkorb, Cart Drawer, Direktkauf und beschleunigte Zahlungen bis unmittelbar vor der verbindlichen Bestellung. Ein sichtbares Produktlabel oder ein Bedingungen-Link beweist nicht, dass alle Schritte abgedeckt sind. <a href="ratgeber.html#grenzen">Funktionsgrenzen und Prüffragen</a>.</p>
 
   <h2 id="warum">Warum legt die App die Felder nicht selbst an?</h2>
   <p>EU Garantie Labels ist eine Theme-Erweiterung ohne Admin-API-Berechtigungen. Sie liest die für die Darstellung benötigten Produktangaben und Metafelder beim Rendern im Theme. Sie kann keine Metafelddefinitionen oder Produktwerte im Shopify-Admin anlegen oder ändern. Deshalb legst du diese bei Bedarf selbst an.</p>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gewährleistungslabel in Shopify einbinden: Anleitung 2026 (Pflicht ab 27.09.)</title>
-<meta name="description" content="Ab 27.09.2026 Pflicht: EU-Gewährleistungslabel und GARAN-Garantielabel im Onlineshop. Was Shopify-Händler jetzt tun müssen – Schritt-für-Schritt-Anleitung ohne Code.">
+<meta name="description" content="EU-Gewährleistungsmitteilung und GARAN in Shopify einbinden: Einrichtung, Lupe, Herstellerdaten und gesonderte Checkout-Prüfung.">
 <style>
 :root { --blau: #003399; --gelb: #FFCC00; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -30,70 +30,47 @@ footer a { margin: 0 10px; }
 </head>
 <body>
 <header>
-<h1>Gewährleistungslabel in Shopify: Was ab dem 27.09.2026 Pflicht ist — und wie du es in 2 Minuten umsetzt</h1>
+<h1>EU-Labels in Shopify: Einrichtung und Grenzen der App</h1>
 <p>EmpCo-Richtlinie · Gewährleistungslabel · GARAN-Garantielabel · Anleitung für Shopify-Händler</p>
 </header>
 <main>
-<p class="datum">Stand: August 2026 · Lesezeit: 4 Minuten</p>
-
-<h2>Worum geht es?</h2>
-<p>Mit der EmpCo-Richtlinie (EU 2024/825) führt die EU harmonisierte Labels ein, die Verbraucher über ihre Rechte informieren. Ab dem <strong>27. September 2026</strong> gilt für Händler, die physische Waren an Verbraucher verkaufen — im Onlineshop und auf Marktplätzen nach Art. 6 Abs. 1 RL 2011/83/EU, im Ladengeschäft nach Art. 5 Abs. 1 derselben Richtlinie:</p>
+<p class="datum">Stand: 28. September 2026</p>
+<h2>Zwei unterschiedliche Informationen</h2>
+<p>Ab 27. September 2026 kommen die harmonisierte EU-Gewährleistungsmitteilung und das GARAN-Label zur Anwendung. Die Mitteilung informiert allgemein über gesetzliche Rechte. GARAN betrifft bestimmte kostenlose Hersteller-Haltbarkeitsgarantien für die gesamte Ware mit mehr als zwei Jahren Laufzeit und entsprechenden Herstellerinformationen. Genau zwei Jahre genügen dafür nicht. <a href="https://europa.eu/youreurope/business/selling-in-eu/consumer-contracts-guarantees/eu-legal-guarantee-notice-and-garan-label/index_en.htm">Offizielle Erläuterung der EU</a>.</p>
+<h2>Was diese App übernimmt</h2>
 <ul>
-<li>Die <strong>Gewährleistungsmitteilung</strong> muss „in hervorgehobener Weise" über die gesetzliche Gewährleistung von mindestens zwei Jahren informieren, und zwar bevor der Verbraucher durch den Vertrag gebunden ist (Art. 6 Abs. 1 lit. l RL 2011/83/EU). In Onlineshops muss sie farbig sein (RGB, Anhang I Nr. 5 der DVO), und keines ihrer Elemente darf verändert werden (Anhang I Nr. 1). Sie ist ein <em>allgemeiner</em> Hinweis und muss nicht auf jeder Produktseite stehen. <strong>Binde sie direkt und vollständig als Grafik ein</strong> — nicht hinter einem Link, einem Mouse-over oder einem Aufklappbereich.</li>
-<li>Gewährt der Hersteller eine kostenlose Haltbarkeitsgarantie von <strong>mehr als zwei Jahren</strong>, darf zusätzlich das <strong>GARAN-Garantielabel</strong> mit Marke, Modellkennung und Dauer erscheinen. Es ist produktbezogen — und Art. 8 Abs. 2 RL 2011/83/EU nennt es (Buchstabe la) unter den Angaben, auf die „unmittelbar bevor dieser seine Bestellung tätigt" hinzuweisen ist. Eine aufklappbare („geschachtelte") Darstellung ist ausdrücklich zulässig; das Label muss dann „beim ersten Mausklick, beim ersten Maus-Rollover bzw. beim ersten Berühren oder Aufziehen auf einem Touchscreen vollständig erscheinen" (Anhang II der DVO (EU) 2025/1960).</li>
+<li>Einbindung der mitgelieferten Gewährleistungsmitteilung in 24 EU-Amtssprachen in unterstützte Theme-Bereiche.</li>
+<li>Direkte Anzeige der Mitteilung mit zusätzlicher Lupe und optionalem EU-Informationslink.</li>
+<li>Produktbezogene GARAN-Ausgabe anhand eingetragener Laufzeit, Hersteller- und Modellangaben; auf Wunsch aufklappbar.</li>
+<li>Separate Einbettungswege für ältere Themes, soweit in der installierten Version angeboten. Individuelle Themes und Variantenwechsel müssen im tatsächlichen Shop geprüft werden.</li>
 </ul>
-
-<div class="box warn">
-<strong>Die häufigste Fehlannahme:</strong> „ab zwei Jahren". Erwägungsgrund 8 der Durchführungsverordnung (EU) 2025/1960 verlangt eine Garantie „für die Dauer von <em>mehr als</em> zwei Jahren". <strong>24 Monate genügen ausdrücklich nicht.</strong> Wer das GARAN-Label bei genau zwei Jahren zeigt, wirbt mit einer Kennzeichnung, die ihm nicht zusteht.
-</div>
-
-<p>Grundlage der Label-Gestaltung ist die Durchführungsverordnung (EU) 2025/1960; die Labels enthalten einen QR-Code auf Erläuterungsseiten der EU-Kommission. Die Praxisleitlinien der Kommission <em>empfehlen</em> für die digitale Darstellung zusätzlich einen anklickbaren Link auf dasselbe Ziel („should always be available" — die Leitlinien sind rechtlich unverbindlich, die Empfehlung aber sinnvoll) — ein QR-Code lässt sich auf dem Gerät, das ihn anzeigt, schließlich nicht scannen. B2B-Verkäufe sind ausgenommen; bei Gebrauchtwaren kann eine kürzere Frist gelten.</p>
-
-<div class="box warn">
-<strong>Warum das ernst zu nehmen ist:</strong> Fehlende Pflichtinformationen sind in Deutschland klassisches Abmahn-Terrain. Neue Pflichten mit klarem Stichtag werden von Abmahnvereinen erfahrungsgemäß ab Tag eins geprüft.
-</div>
-
-<h2>Die Umsetzung in Shopify — zwei Wege</h2>
-
-<h3>Weg 1: Manuell im Theme</h3>
-<p>Label-Grafiken einbinden, Liquid-Template anpassen, Übersetzungen pflegen, bei Theme-Updates alles erneut prüfen — machbar, aber fehleranfällig und bei jedem Produkt mit Herstellergarantie von Hand zu pflegen. Dazu kommt die Detailarbeit: richtige Sprachfassung, korrekte Position der Garantiedauer im Label, Verlinkung.</p>
-
-<h3>Weg 2: Per App in 2 Minuten (ohne Code)</h3>
+<p>Die Installation allein platziert noch kein Label. → <a href="einrichtung.html#block-einfuegen">Schritt-für-Schritt-Einrichtung und Hilfe bei fehlenden Blöcken</a>.</p>
+<h2>So gehst du vor</h2>
 <ol>
-<li><a href="https://apps.shopify.com/eu-garantie-labels" rel="noopener">EU Garantie Labels</a> aus dem Shopify App Store installieren (30 Tage kostenlos testen).</li>
-<li>Theme-Editor öffnen: <em>Onlineshop → Themes → Anpassen → Produktseiten-Template</em>.</li>
-<li>Im Abschnitt <em>Produktinformationen</em> auf <em>Block hinzufügen → Apps → EU-Gewährleistungslabel</em> klicken. Die verfügbaren Positionen hängen vom Theme ab. Falls der Abschnitt keine App-Blöcke unterstützt, <em>Abschnitt hinzufügen → Apps</em> prüfen. Danach speichern. <a href="einrichtung.html#block-einfuegen">Vollständige Einbindung und Fehlerhilfe</a>.</li>
-<li>Optional: Block <em>EU-Garantielabel</em> hinzufügen. Die Garantiedauer steuerst du wahlweise über einen Schieberegler für alle Produkte, über eine Zeile je Hersteller oder pro Produkt über das Metafeld <code>custom.garantie_dauer_jahre</code>. → <a href="einrichtung.html"><strong>Schritt-für-Schritt-Anleitung zur Einrichtung</strong></a></li>
-<li>Speichern. Fertig.</li>
+<li>In einer unveröffentlichten Theme-Kopie die passende Produktvorlage öffnen und das Gewährleistungslabel als App-Block einsetzen. Fehlt ein geeigneter Bereich, den Vintage-Weg der Anleitung prüfen.</li>
+<li>GARAN nur für geeignete, anhand von Herstellerunterlagen geprüfte Produkte einrichten. Eine pauschale Hersteller-Zuordnung betrifft mehrere Produkte und muss für diese zutreffen.</li>
+<li>Hersteller- und Modellangaben überprüfen: Anbieter, SKU und Barcode sind Ersatzfelder, kein Beleg für die richtige Herstellerkennung.</li>
+<li>Darstellung, Variantenwechsel, Lupe und Bedingungen-Link mobil und am Desktop kontrollieren. Andere Vorlagen separat prüfen.</li>
+<li>Den vollständigen Kaufablauf und ergänzende Informationen prüfen, bevor du die Händlerkonfiguration veröffentlichst.</li>
 </ol>
-
-<div class="box">
-<strong>Was die App ausliefert:</strong> die Gewährleistungsmitteilung als unveränderte Originalgrafik der Europäischen Kommission, in allen 24 Amtssprachen, automatisch passend zur Sprache deines Shops. Das GARAN-Label ist sprachneutral gestaltet und existiert nur in einer Fassung. Nichts davon ist nachgebaut. Beim GARAN-Label werden ausschließlich die drei laut Anhang II editierbaren Felder befüllt — Dauer, Marke, Modellkennung — an den Originalkoordinaten und in der Originaltypografie.
-</div>
-
-<div class="box">
-<strong>Datenschutz-Bonus:</strong> Die App benötigt null API-Berechtigungen, setzt keine Cookies, lädt kein JavaScript und ruft keine fremden Server auf. Der QR-Code ist Teil der offiziellen Grafik und wird nicht nachgeladen. Es gibt schlicht keine Datenverarbeitung, die du in deine Datenschutzerklärung aufnehmen müsstest.
-</div>
-
-<p style="text-align:center; margin: 26px 0;">
-<a class="cta" href="https://apps.shopify.com/eu-garantie-labels" rel="noopener">→ EU Garantie Labels im Shopify App Store</a><br>
-<span style="font-size:13px; color:#667;">4,99 $/Monat oder 49 $/Jahr · 30 Tage kostenlos · unbegrenzte Produkte</span>
-</p>
-
-<h2>Häufige Fragen</h2>
-<p><strong>Gilt das auch für mich, wenn ich nur über Amazon/eBay verkaufe?</strong> Ja — die Pflicht gilt vertriebskanalunabhängig für B2C-Verkäufe physischer Waren.</p>
-<p><strong>Was ist mit den offiziellen Label-Dateien der EU?</strong> Die sind bereits in der App enthalten — alle 24 Amtssprachen, unverändert. Du musst nichts herunterladen und nichts hochladen. Wer die offizielle Datei lieber selbst einbindet, kann sie pro Block hinterlegen — verändern darf man sie nicht: „Keines der Elemente der harmonisierten Mitteilung ist editierbar" (Anhang I Nr. 1).</p>
-<p><strong>Brauche ich das GARAN-Label für jedes Produkt?</strong> Nein, nur für die Produkte, bei denen die Voraussetzungen erfüllt sind — dort ist es dann allerdings Pflicht, keine freie Entscheidung. Voraussetzung: Der Hersteller gewährt eine kostenlose Haltbarkeitsgarantie von mehr als zwei Jahren auf die gesamte Ware und stellt dir diese Information zur Verfügung.</p>
-<p><strong>Muss das Label anklickbar sein?</strong> Die Praxisleitlinien der Kommission halten für die digitale Darstellung fest, dass ein anklickbarer Link auf dasselbe Ziel wie der QR-Code immer verfügbar sein soll. Die App setzt das um: Die Grafik ist verlinkt, darunter steht zusätzlich ein sichtbarer Textlink. Der Link ist eine <em>Ergänzung</em> zur Grafik, kein Ersatz für sie.</p>
-<p><strong>Reicht es, die Mitteilung hinter einen Link oder ein Aufklappfeld zu legen?</strong> Davon ist abzuraten. Die Praxisleitlinien der Kommission zeigen zwar eine Link-Lösung, sie sind aber rechtlich unverbindlich. Die Verordnung selbst erlaubt die verschachtelte Darstellung ausdrücklich <em>nur</em> für das GARAN-Label: Erwägungsgrund 14 nennt erst beide Labels gemeinsam („sowohl die Mitteilung als auch die Kennzeichnung"), gestattet die Verschachtelung dann aber allein der Kennzeichnung; Anhang II regelt sie im Detail, Anhang I kennt nichts Vergleichbares. Zusammen mit der Vorgabe „in hervorgehobener Weise" (Art. 6 Abs. 1 lit. l RL 2011/83/EU) spricht das dafür, die Mitteilung unmittelbar und vollständig als Grafik einzubinden. Anwaltliche Stellungnahmen aus der Praxis kommen zum selben Ergebnis. Diese App liefert die Mitteilung deshalb ausschließlich direkt aus — eine Aufklapp-Option gibt es für sie bewusst nicht.</p>
-<p><strong>Was ist mit einem Cart Drawer?</strong> Aufpassen: Wird die Mitteilung erst sichtbar, wenn der Kunde die Warenkorb-Schublade öffnet, ist sie faktisch wieder geschachtelt. In Themes mit Cart Drawer bleibt praktisch die Produktseite oder eine dauerhaft sichtbare Stelle.</p>
+<h2>Warnungen und Schutzprüfung</h2>
+<p>Ein Editorhinweis bezieht sich auf das Vorschauprodukt, nicht auf alle Shopartikel. Wenn der Block die zusätzliche GARAN-Schutzprüfung anbietet, wird diese bewusst je Block aktiviert; sie ist standardmäßig aus. Vorher die betroffenen Daten und eine geeignete Darstellung klären. <a href="einrichtung.html#schutzpruefung">Umstellungsanleitung</a>.</p>
+<p>Die bisherige Automatik rundet nicht ganz- oder halbjährige Laufzeiten ab. Das kann eine andere Garantiedauer anzeigen und ist keine bestätigte Lösung. Nicht selbst passende Werte erfinden oder eine echte Garantie verkürzen. Die Schutzprüfung kann betroffene Ausgaben sperren; die Sperre allein erfüllt keine Informationspflicht.</p>
+<p>Auch bei langen Kennungen gilt: Keine Angaben abschneiden oder zur Problemlösung beliebig verkleinern. Die automatische Grafik verwendet teilweise Schriftanpassungen. Deshalb wird keine unveränderte amtliche Typografie zugesichert. Ein zutreffendes Herstellerbild kann bei Textproblemen geprüft werden, löst aber keinen Laufzeitfehler. Gestaltung und Sonderfälle sind gesondert zu klären. <a href="https://commission.europa.eu/publications/practical-guidelines-and-high-resolution-vector-files-eu-notice-and-label-product-guarantees_en">Kommissionsleitlinien und Originaldateien</a>.</p>
+<h2 id="grenzen">Was nicht automatisch erledigt ist</h2>
 <div class="box warn">
-<strong>Der teuerste Fehler beim GARAN-Label:</strong> Wer es zeigt, wirbt rechtlich mit einer Garantie. Damit schuldest du zusätzlich die vollständigen Garantieangaben — Name und Anschrift des Garantiegebers, Dauer, räumlicher Geltungsbereich, die Garantiebedingungen, das Verfahren zur Geltendmachung und den Hinweis, dass die gesetzlichen Mängelrechte unberührt bleiben (§ 479 BGB). Fehlt eines davon, ist die Garantiewerbung wettbewerbswidrig und abmahnfähig. Die IT-Recht Kanzlei formuliert es so: „Was jedoch in keinem Fall geht: Das neue Garantie-Label darstellen, aber nicht die weiteren Informationspflichten zur Garantie zu erfüllen." Die App hat dafür seit v1.4.4 ein Feld „Link zu den Garantiebedingungen" — pro Shop oder pro Produkt über <code>custom.garantie_bedingungen_url</code>.
+<p><strong>Keine Checkout-Erweiterung:</strong> Die App ist eine Theme-Erweiterung. Prüfe GARAN im normalen Bestellablauf sowie bei Direktkauf und beschleunigten Zahlungen bis unmittelbar vor Abgabe der Bestellung. Ein Hinweis in dieser Anleitung ersetzt keine fehlende Anzeige.</p>
+<p>Shopifys Checkout-UI-Erweiterungen für die Informations-, Versand- und Zahlungsschritte sind auf Shopify Plus beschränkt. Daraus folgt keine pauschale Aussage, dass andere Pläne ihre Pflichten nicht erfüllen könnten. Die konkrete Lösung muss zum Shop passen. <a href="https://shopify.dev/docs/api/checkout-ui-extensions/latest">Shopify-Dokumentation</a>.</p>
 </div>
-
-<p><strong>Warum erscheint mein GARAN-Label nicht?</strong> Meist, weil die Dauer nicht über zwei Jahren liegt oder Marke bzw. Modellkennung fehlen. Die häufigsten Ursachen stehen in der <a href="einrichtung.html">Einrichtungsanleitung</a>.</p>
-
-<p style="font-size:13px; color:#888; margin-top: 26px;">Hinweis: Dieser Artikel ist sorgfältig recherchiert, aber keine Rechtsberatung. Verbindliche Auskünfte gibt deine Rechtsberatung bzw. IHK.</p>
+<p><strong>Keine vollständige Garantieerklärung:</strong> Der Bedingungen-Link ist hilfreich, ersetzt aber keine Prüfung der notwendigen Angaben und ihrer Bereitstellung. Für Deutschland regelt § 479 BGB die Garantieerklärung und deren Bereitstellung auf einem dauerhaften Datenträger spätestens bei Lieferung. Einen solchen Dokumentenablauf übernimmt diese App nicht. <a href="https://www.gesetze-im-internet.de/bgb/__479.html">§ 479 BGB</a>.</p>
+<p><strong>Keine pauschale Rechtsfreigabe:</strong> Die passende Platzierung, Lesbarkeit, bestätigte Herstellerangaben, die konkrete Typografie und der Kaufabschluss müssen geprüft werden. Die Kommissionsleitlinien sind eine Auslegungshilfe, keine individuelle Freigabe eines Shops. <a href="https://commission.europa.eu/document/download/3e4dbee6-8184-4256-923d-c52551c7e9f0_en?filename=Practical+guidelines+Harmonised+Label%26Notice+product+guarantees_ARES+27042026.pdf">Praktische Leitlinien, insbesondere Gestaltung und digitale Anzeige</a>.</p>
+<h2>Lupe und EU-Link</h2>
+<p>Die Gewährleistungsmitteilung bleibt direkt als vollständige Grafik sichtbar. Die zusätzliche Lupe öffnet dieselbe Grafik größer. Öffnen per Klick, Tippen oder Enter, schließen über „Schließen“ oder Escape. Bei fehlender Dialogfunktion führt der Vergrößerungslink zur Bilddatei. Der EU-Textlink führt dagegen zu weiterführenden Informationen. Weder Lupe noch Informationslink ersetzen eine gut lesbare und passend platzierte Grundanzeige.</p>
+<h2>Datenschutz und Support</h2>
+<p>Keine Admin-API-Berechtigungen bedeutet nicht „keine Datenverarbeitung“. Die App nutzt Shopify-Theme-Daten und Skripte; QR-Codes sind in den Grafiken enthalten. Datenschutz-Webhooks, Website-Hosting und E-Mail-Support sind gesondert beschrieben. → <a href="datenschutz.html">Datenschutzhinweise</a>.</p>
+<p>Bei Problemen: Theme-Name und Version, Produktlink, betroffene Variante, Gerät/Browser und einen Screenshot an <a href="mailto:rttnsdsgnr@gmail.com">rttnsdsgnr@gmail.com</a> senden. Keine Passwörter oder API-Schlüssel mitsenden.</p>
+<p><a class="cta" href="https://apps.shopify.com/eu-garantie-labels" rel="noopener">App, aktuelle Preise und Testbedingungen ansehen</a></p>
+<p style="font-size:13px;color:#667">Diese Anleitung beschreibt die App und offene Prüfpunkte. Sie ist keine anwaltliche Freigabe.</p>
 </main>
 <footer>
 <a href="index.html">Start</a>
