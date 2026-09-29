@@ -48,13 +48,16 @@
     links.forEach(function (link) {
       var kind = link.dataset.editorLink;
       var target = new URL('/admin/themes' + (kind === 'themes' ? '' : '/current/editor'), 'https://' + shop);
-      if (kind !== 'themes') target.searchParams.set('template', 'product');
+      if (kind !== 'themes') target.searchParams.set('template', kind === 'shop' ? 'collection' : 'product');
       if (kind === 'block') {
         target.searchParams.set('addAppBlockId', clientId + '/gewaehrleistungslabel');
         target.searchParams.set('target', 'mainSection');
       } else if (kind === 'vintage') {
         target.searchParams.set('context', 'apps');
         target.searchParams.set('activateAppId', clientId + '/gewaehrleistungslabel-vintage');
+      } else if (kind === 'shop') {
+        target.searchParams.set('context', 'apps');
+        target.searchParams.set('activateAppId', clientId + '/gewaehrleistungslabel-shop');
       }
       link.href = target.href;
       link.target = '_blank';
